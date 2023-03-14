@@ -2,8 +2,9 @@
 
 Unchangable raw data
 
-### MutSpec&CodonUsage.csv
+### MutSpec_CU_tRNA.csv
 
+All data about mutational spectrum, codon usage and tRNA we analyse
 The table consists these columns:
 - **1st Species**  
     Species names in "Genus_Species" form in Latin
@@ -28,3 +29,11 @@ The table consists these columns:
     - 655-718th ND2
     - 719-782th ND5
     - 783-846th ND1
+- **846-868th Anticodons**  
+    22 columns with tRNAs' anticodons to corresponding amino acids  
+    Columns are named in the form 'Amino acid_Ac'. For example, 'Leu_Ac', 'Tyr_Ac',...  
+    Leucine and Serine both have 2 tRNAs. Ser1 refers to AGY codons (Ser2 to UCN, Leu1 to CUN Leu2 to UUR).  
+    This data was given from [mitotRNAdb](http://mttrna.bioinf.uni-leipzig.de/mtDataOutput/).  
+
+### mitotRNAdb.mfa
+Multifasta file with all records from [mitotRNAdb](http://mttrna.bioinf.uni-leipzig.de/mtDataOutput/)
