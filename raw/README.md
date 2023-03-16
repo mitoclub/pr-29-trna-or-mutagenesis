@@ -15,21 +15,23 @@ The table consists these columns:
     'A>T', 'A>G', 'A>C', 'T>A', 'T>G', 'T>C', 'G>A', 'G>T', 'G>C', 'C>A', 'C>T', 'C>G'
 - **15-846th Codon usage**  
     64 columns with codon usage for each mtDNA gene  
-    Columns are named in the form 'Codon_Gene'. For example, 'AAA_ND6', 'TGC_CytB',...   
-    - 15-78th   ND6
-    - 79-142th  CytB 
-    - 143-206th ND4
-    - 207-270th ND4L
-    - 271-334th ATP8
-    - 335-398th ND3
-    - 399-462th COX1
-    - 463-526th ATP6
-    - 527-590th COX3
-    - 591-654th COX2
-    - 655-718th ND2
-    - 719-782th ND5
-    - 783-846th ND1
-- **846-868th Anticodons**  
+    The first 64 columns are total codon usage for 12 genes except ND6 (on the opposite strand). Columns are named in the form 'Codon_12'. For example, 'AAA_12', 'TGC_12',...  
+    The rest columns are named in the same way but with gene name. . For example, 'AAA_ND6', 'TGC_COX3',...
+    - 15-78th   Sum of each codon usage for 12 genes  
+    - 79-142th  ND6 
+    - 143-206th CytB
+    - 207-270th ND4
+    - 271-334th ND4L
+    - 335-398th ATP8
+    - 399-462th ND3
+    - 463-526th COX1
+    - 527-590th ATP6
+    - 591-654th COX3
+    - 655-718th COX2
+    - 719-782th ND2
+    - 783-846th ND5
+    - 847-910th ND1
+- **911-932th Anticodons**  
     22 columns with tRNAs' anticodons to corresponding amino acids  
     Columns are named in the form 'Amino acid_Ac'. For example, 'Leu_Ac', 'Tyr_Ac',...  
     Leucine and Serine both have 2 tRNAs. Ser1 refers to AGY codons (Ser2 to UCN, Leu1 to CUN Leu2 to UUR).  
