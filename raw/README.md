@@ -9,7 +9,7 @@ The table consists these columns:
 - **Species**  
     Species names in "Genus_Species" form in Latin
 - **Class**  
-    Taxonomy in "Domain_Kingdom_ ... _Family_Genus" form in Latin
+    Class of species
 - **Mutational spectrum**  
     There are 12 columns here:  
     'A>T', 'A>G', 'A>C', 'T>A', 'T>G', 'T>C', 'G>A', 'G>T', 'G>C', 'C>A', 'C>T', 'C>G'
@@ -45,6 +45,6 @@ The table consists these columns:
     22 columns with calculated Gibbs energy based on secondary structure of tRNAs  
     'Ala_Ge', 'Arg_Ge', 'Asn_Ge', 'Asp_Ge', 'Cys_Ge', 'Gln_Ge', 'Glu_Ge', 'Gly_Ge', 'His_Ge', 'Ile_Ge', 'Leu1_Ge', 'Leu2_Ge', 'Lys_Ge', 'Met_Ge', 'Phe_Ge', 'Pro_Ge', 'Ser1_Ge', 'Ser2_Ge', 'Thr_Ge', 'Trp_Ge', 'Tyr_Ge', 'Val_Ge'  
 - **Taxonomy**  
-    Extanded taxonomy from NCBI 
+    Extanded taxonomy from NCBI in "Domain_Kingdom_ ... _Family_Genus" form in Latin  
 ### mitotRNAdb.mfa
 Multifasta file with all records from [mitotRNAdb](http://mttrna.bioinf.uni-leipzig.de/mtDataOutput/)
